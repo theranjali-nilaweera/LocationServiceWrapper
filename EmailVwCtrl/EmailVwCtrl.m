@@ -7,12 +7,12 @@
 //
 
 #import "EmailVwCtrl.h"
-#import "Constants.h"
 #import <MessageUI/MessageUI.h>
 #import <CoreLocation/CoreLocation.h>
 #import "LocationService.h"
 #import "ReachabilityHandler.h"
 #import "MBProgressHUD.h"
+#import "LocationServiceConstants.h"
 
 
 @interface EmailVwCtrl () <MFMailComposeViewControllerDelegate>

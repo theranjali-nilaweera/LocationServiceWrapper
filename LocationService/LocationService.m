@@ -8,7 +8,7 @@
 
 #import "LocationService.h"
 #import "LocationSettingDefiner.h"
-#import "Constants.h"
+#import "LocationServiceConstants.h"
 
 @interface LocationService ()
 @property (nonatomic , retain) NSDateFormatter * dateFormatter;

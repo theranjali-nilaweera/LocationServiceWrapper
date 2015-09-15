@@ -8,7 +8,7 @@
 
 #import "LocationSettingDefiner.h"
 #import <CoreLocation/CoreLocation.h>
-#import "Constants.h"
+#import "LocationServiceConstants.h"
 
 @implementation LocationSettingDefiner
 /*

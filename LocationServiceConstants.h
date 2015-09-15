@@ -1,5 +1,5 @@
 //
-//  Constants.h
+//  LocationServiceConstants.h
 //  gps-test
 //
 //  Created by Theranjali Nilaweera on 17/08/2015.

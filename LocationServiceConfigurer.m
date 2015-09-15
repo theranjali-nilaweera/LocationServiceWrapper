@@ -9,7 +9,7 @@
 #import "LocationServiceConfigurer.h"
 #import "EmailVwCtrl.h"
 #import "LocationService.h"
-#import "Constants.h"
+#import "LocationServiceConstants.h"
 
 @interface LocationServiceConfigurer ()
 
@@ -129,8 +129,10 @@
 
     NSDate *curentDate = [[NSDate alloc] init];
     double timeFromCurrent = [curentDate  timeIntervalSinceDate:location.timestamp];
+ 
     //time difference in seconds
     if(timeFromCurrent<=self.selectedTimeDifference.intValue){
+           NSLog(@"Time diff %.2f",timeFromCurrent);
         return YES;
     }
     return NO;

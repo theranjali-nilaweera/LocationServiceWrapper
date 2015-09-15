@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LocationServiceConstants.h"
 
 @class CLLocation;
 typedef void (^LocationSucessBlock)(CLLocation*);
