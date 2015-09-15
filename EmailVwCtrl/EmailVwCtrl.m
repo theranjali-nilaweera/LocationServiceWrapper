@@ -106,7 +106,7 @@
     
     NSString *stringToPrint = [NSString stringWithFormat:@"%@,%@,distance%.0f,%.0f,%@,%.6f,%.6f,%.3f,%.3f,%.3f,%@,%@,%.6f,%.6f,%.3f,%@\n",
                                ModeDisplayStrings(currentMode.intValue),
-                               locationService.locationManager.pausesLocationUpdatesAutomatically?@"No":@"Yes",
+                               locationService.locationManager.pausesLocationUpdatesAutomatically?@"Yes":@"No",
                                locationService.locationManager.distanceFilter,
                                locationService.locationManager.desiredAccuracy,
                                locationService.locationManager.activityType==3?@"Fitness":@"otherNav",

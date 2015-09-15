@@ -119,7 +119,7 @@
 }
 
 -(BOOL)isWithinAccuracy:(double)currentAccuracy{
-    if (currentAccuracy<self.selectedAccuracyCriteria.doubleValue) {
+    if (currentAccuracy<=self.selectedAccuracyCriteria.doubleValue) {
         return YES;
     }
     return NO;
