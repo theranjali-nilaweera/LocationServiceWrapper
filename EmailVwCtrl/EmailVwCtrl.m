@@ -10,7 +10,7 @@
 #import <MessageUI/MessageUI.h>
 #import <CoreLocation/CoreLocation.h>
 #import "LocationService.h"
-#import "ReachabilityHandler.h"
+//#import "ReachabilityHandler.h"
 #import "MBProgressHUD.h"
 #import "LocationServiceConstants.h"
 
@@ -21,7 +21,7 @@
 @property (nonatomic , strong) CLLocation *prevLocation;
 @property (nonatomic , strong) NSDateFormatter *dateFormatter;
 @property (nonatomic, retain) NSArray *allFileNames;
-@property (nonatomic, retain) ReachabilityHandler *reachHandler;
+//@property (nonatomic, retain) ReachabilityHandler *reachHandler;
 @property (nonatomic, retain) NSString *networkStatusString;
 
 @end
@@ -53,8 +53,8 @@
 
 
 -(void)setNetworkStatus{
-    self.reachHandler = [[ReachabilityHandler alloc] init];
-    self.networkStatusString = [self.reachHandler getNetworksAvaialableString];
+//    self.reachHandler = [[ReachabilityHandler alloc] init];
+    self.networkStatusString = @"Unchecked";//[self.reachHandler getNetworksAvaialableString];
 }
 
 #pragma mark - notification N File write
