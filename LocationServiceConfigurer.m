@@ -47,9 +47,11 @@
 
 #pragma mark - Call Location service
 -(void)startLocationServiceWithSuccessCompletion:(LocationSucessBlock)completionBlock failureCompletion:(LocationFailureBlock)failureBlock{
+    [self.emailerVwCtrl initCsvFile];
     self.currentModeStartTime = [[NSDate alloc] init];
     self.locationSucessBlock = [completionBlock copy];
     self.locationFailureBlock = [failureBlock copy];
+    self.currentModeReturnCount = @0;
     [self startLocationsUpdate];
     NSLog(@"Starting up location service");
 }
@@ -71,7 +73,6 @@
     self.dateFormatter =  [[NSDateFormatter alloc] init];
     [_dateFormatter setDateFormat:@"dd/MM/yyyy HH:mm:ss:SSS"];
     self.emailerVwCtrl = [[EmailVwCtrl alloc] init];
-    [self.emailerVwCtrl initCsvFile];
     [self setupNotification];
     [self setupLocationServiceCallBack];
 }
